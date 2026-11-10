@@ -512,7 +512,7 @@ class _AccidentsPageState extends State<AccidentsPage> {
                   vertical: 6,
                 ),
                 decoration: BoxDecoration(
-                  color: statusColor.withOpacity(0.15),
+                  color: statusColor.withValues(alpha: 0.15),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Text(
@@ -674,7 +674,7 @@ class _AccidentsPageState extends State<AccidentsPage> {
       icon: Icon(icon, size: 17),
       label: Text(label),
       style: ElevatedButton.styleFrom(
-        backgroundColor: color.withOpacity(0.15),
+        backgroundColor: color.withValues(alpha: 0.15),
         foregroundColor: color,
         elevation: 0,
       ),

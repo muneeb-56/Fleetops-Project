@@ -6,21 +6,21 @@ class FinancePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
         Expanded(
           child: ManagementPage(
             title: 'Finance & Expenses',
             subtitle: 'Manage fleet expenses and financial records.',
             addButtonText: 'Add Expense',
-            columns: const [
+            columns: [
               'Expense',
               'Vehicle',
               'Amount',
               'Date',
               'Status',
             ],
-            initialRows: const [
+            initialRows: [
               [
                 'Fuel',
                 'Toyota Corolla',

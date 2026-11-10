@@ -630,7 +630,7 @@ class DashboardPage extends StatelessWidget {
             contentPadding: EdgeInsets.zero,
             leading: CircleAvatar(
               backgroundColor:
-                  (item[4] as Color).withOpacity(0.12),
+                  (item[4] as Color).withValues(alpha: 0.12),
               child: Icon(
                 item[3] as IconData,
                 color: item[4] as Color,
@@ -692,10 +692,10 @@ class DashboardPage extends StatelessWidget {
             margin: const EdgeInsets.only(bottom: 12),
             padding: const EdgeInsets.all(13),
             decoration: BoxDecoration(
-              color: (item[2] as Color).withOpacity(0.07),
+              color: (item[2] as Color).withValues(alpha: 0.07),
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: (item[2] as Color).withOpacity(0.2),
+                color: (item[2] as Color).withValues(alpha: 0.2),
               ),
             ),
             child: Row(

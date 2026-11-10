@@ -136,7 +136,9 @@ class _AppShellState extends State<AppShell> {
                     horizontal: 12,
                     vertical: 3,
                   ),
-                  child: ListTile(
+                  child: Material(
+  color: Colors.transparent,
+  child: ListTile(
                     selected: selected,
                     selectedTileColor: AppColors.darkGreen,
                     shape: RoundedRectangleBorder(
@@ -169,6 +171,7 @@ class _AppShellState extends State<AppShell> {
                       }
                     },
                   ),
+                  )
                 );
               },
             ),
@@ -176,7 +179,9 @@ class _AppShellState extends State<AppShell> {
 
           Padding(
             padding: const EdgeInsets.all(15),
-            child: ListTile(
+            child: Material(
+  color: Colors.transparent,
+  child: ListTile(
               leading: const Icon(
                 Icons.logout,
                 color: Colors.white70,
@@ -195,6 +200,7 @@ class _AppShellState extends State<AppShell> {
                 );
               },
             ),
+           )
           ),
         ],
       ),
@@ -306,7 +312,7 @@ class StatCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: color.withOpacity(0.12),
+                  color: color.withValues(alpha: 0.12),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Icon(icon, color: color),
